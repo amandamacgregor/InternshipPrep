@@ -9,8 +9,8 @@ feature "User marks todo incomplete" do
         click_on "Mark complete"
         click_on "Mark incomplete"
                 
-        expect(page).not_to have_css ".todos li.completed", text: "Buy milk"
-        expect(page).to have_css ".todos li.completed", text: "Buy milk"
+        # expect(page).not_to have_css ".todos li.completed", text: "Buy milk"
+        # expect(page).to have_css ".todos li.completed", text: "Buy milk"
         # expect(page).not_to display_completed_todo "Buy milk"
         # expect(page).to display_todo "Buy milk"
     end
